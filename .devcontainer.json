@@ -1,0 +1,40 @@
+{
+    "name" : "CS:3820 F24 PostScript",
+    "image" : "docker.io/hjsc/cs3820:latest",
+    "customizations": {
+        "vscode": {
+            "extensions" : ["haskell.haskell", "github.classroom"],
+            "settings" : {
+                "haskell" : {
+                    "manageHLS" : "GHCup",
+                    "toolchain" : {
+                        "ghc" : "9.8.1",
+                        "hls" : "2.6.0.0",
+                        "cabal" : "3.10.3.0",
+                        "stack" : null
+                    }
+                }
+            }
+        },
+        "codespaces": {
+            "extensions" : ["haskell.haskell", "github.classroom"],
+            "settings" : {
+                "haskell" : {
+                    "manageHLS" : "GHCup",
+                    "toolchain" : {
+                        "ghc" : "9.8.1",
+                        "hls" : "2.6.0.0",
+                        "cabal" : "3.10.3.0",
+                        "stack" : null
+                    }
+                }
+            }
+        }
+    },
+    
+
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/postscript,type=bind,consistency=delegated",
+    "workspaceFolder": "/home/vscode/postscript",
+
+    "remoteUser": "vscode"
+}

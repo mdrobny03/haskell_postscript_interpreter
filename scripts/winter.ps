@@ -1,0 +1,91 @@
+/circlepath {
+newpath
+0 0 1 -90 90 arc
+0 0 1 90 -90 arc
+} def
+
+/circle {
+gsave
+
+translate
+dup dup scale
+4 exch div setlinewidth
+setrgbcolor
+
+circlepath
+fill
+
+setrgbcolor
+circlepath
+stroke
+
+grestore
+} def
+
+/center 512 2 div def
+/black {0.0 0.0 0.0} def
+/gray {0.95 0.95 0.95} def
+
+% bottom body
+black gray
+100 
+center 200.0
+circle
+
+% top body
+black gray
+75
+center 325.0
+circle
+
+% buttons
+black black
+7
+center 15 add 150.0
+circle
+
+black black
+7
+center 15 add 10 add 190.0
+circle
+
+black black
+7
+center 15 add 230.0
+circle
+
+% eyes
+black black
+9
+center 10 sub 355.0
+circle
+
+black black
+9
+center 45 add 355.0
+circle
+
+% mouth
+4 setlinewidth
+newpath
+center 25 sub 315.0 moveto 
+
+center 10 sub 295.5
+center 40 add 275.5
+
+center 60 add 300.0 curveto
+stroke
+
+% nose
+/nose {
+newpath
+center 20  add 310.0 moveto
+center 100 add 330.0 lineto
+center 15  add 340.0 lineto
+closepath
+} def
+1.0 165 255 div 0.0 setrgbcolor
+nose fill
+0.0 0.0 0.0 setrgbcolor
+1 setlinejoin
+nose stroke

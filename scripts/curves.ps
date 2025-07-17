@@ -1,0 +1,87 @@
+/shapeOne {
+gsave
+newpath
+0 0 moveto
+80 100 lineto
+180 120 lineto
+150 0  lineto
+
+2 setlinewidth
+[10 5 10 5] 0 setdash
+stroke
+
+newpath
+0 0 moveto
+80 100
+180 120
+150 0 curveto
+
+5 setlinewidth
+[] 0 setdash
+stroke
+grestore
+} def
+
+/shapeTwo {
+gsave
+newpath
+0 0 moveto
+70  100 lineto
+110 -50 lineto
+150   0  lineto
+
+2 setlinewidth
+[10 5 10 5] 0 setdash
+stroke
+
+newpath
+0 0 moveto
+70 100
+110 -50
+150   0 curveto
+
+5 setlinewidth
+[] 0 setdash
+stroke
+grestore
+} def
+
+/shapeThree {
+gsave
+newpath
+0     0 moveto
+170 150 lineto
+-30 110 lineto
+150  20 lineto
+
+2 setlinewidth
+[10 5 10 5] 0 setdash
+stroke
+
+newpath
+0 0 moveto
+170 150
+-30 110
+150  20 curveto
+
+5 setlinewidth
+[] 0 setdash
+stroke
+grestore
+} def
+
+gsave
+70 70 translate
+shapeOne
+grestore
+
+gsave
+300 230 translate
+shapeTwo
+grestore
+
+gsave
+100 300 translate
+shapeThree
+grestore
+

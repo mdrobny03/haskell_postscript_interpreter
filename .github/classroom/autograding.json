@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {"name" : "Problem 1", "setup" : "", "run" : "./check.sh scripts/arcs.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 2", "setup" : "", "run" : "./check.sh scripts/curves.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 3", "setup" : "", "run" : "./check.sh scripts/cube.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 4", "setup" : "", "run" : "./check.sh scripts/dashes.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 5", "setup" : "", "run" : "./check.sh scripts/linecaps.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 6", "setup" : "", "run" : "./check.sh scripts/linejoins.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 7", "setup" : "", "run" : "./check.sh scripts/pacman.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 8", "setup" : "", "run" : "./check.sh scripts/tigerhawk.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 9", "setup" : "", "run" : "./check.sh scripts/winter.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Image", "setup" : "", "run" : "cabal run postscript -- image.ps image.png", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 2 }
+  ]
+}

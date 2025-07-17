@@ -1,0 +1,92 @@
+/leaves {
+    newpath
+    % Top layer
+    190 280 moveto
+    250 370 lineto
+    310 280 lineto
+    190 280 moveto
+    closepath
+
+    % Middle layer
+    155 195 moveto
+    250 304.17 lineto
+    344 195 lineto
+    155 195 moveto
+    closepath
+
+    % Bottom layer
+    134.53 100 moveto
+    250 250 lineto
+    365.47 100 lineto
+    134.53 100 moveto
+    closepath
+} def
+0.0 1.0 0.0 setrgbcolor
+stroke
+leaves fill
+
+/star {
+    newpath
+    250 425 moveto
+    270 375 lineto
+    320 375 lineto
+    280 350 lineto
+    300 300 lineto
+    250 325 lineto
+    200 300 lineto
+    220 350 lineto
+    180 375 lineto
+    230 375 lineto
+    closepath
+} def
+
+/ornNN{
+newpath
+195 130 15 0 360 arc
+closepath
+1.0 0.0 1.0 setrgbcolor
+} def
+
+stroke
+ornNN fill
+
+1.0 0.84 0.0 setrgbcolor
+stroke
+star fill
+
+/ornN{
+newpath
+280 180 15 0 360 arc
+closepath
+0.0 0.0 1.0 setrgbcolor
+} def
+
+stroke
+ornN fill
+
+/orn{
+newpath
+215 220 15 0 360 arc
+closepath
+1.0 0.0 0.0 setrgbcolor
+} def
+
+stroke
+orn fill
+
+/trunk {
+newpath
+225 100 lineto
+275 100 lineto
+300 25 25 180 270 arc
+
+300 0 lineto
+200 25 25 270 0 arc
+225 100 lineto
+closepath
+} def
+
+0.87 0.46 0.35 setrgbcolor
+3 setlinewidth
+stroke
+trunk fill
